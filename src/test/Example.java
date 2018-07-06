@@ -16,7 +16,7 @@ public class Example {
         for (int i = 0; i < 10; i++)
         {
             GetRealtime response = plug.consumption();
-            System.out.println("Power: " + response.getPower() + "W, Total Consumption: " + response.getConsumption() + "kWh Current: " + response.getCurrent() + "A Voltage: " + response.getVoltage());
+            System.out.println("Power: " + response.getPower() + "mW, Total Consumption: " + response.getConsumption() + "Wh Current: " + response.getCurrent() + "mA Voltage: " + response.getVoltage() + "mV");
             Thread.sleep(5000);
         }
         //

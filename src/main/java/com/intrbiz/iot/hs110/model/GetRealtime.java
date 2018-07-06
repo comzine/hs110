@@ -4,16 +4,16 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class GetRealtime extends HS110CallStatus
 {
-    @JsonProperty("current")
+    @JsonProperty("current_ma")
     private double current;
     
-    @JsonProperty("voltage")
+    @JsonProperty("voltage_mv")
     private double voltage;
     
-    @JsonProperty("power")
+    @JsonProperty("power_mw")
     private double power;
     
-    @JsonProperty("total")
+    @JsonProperty("total_wh")
     private double consumption;
     
     public GetRealtime()
